@@ -1,14 +1,8 @@
 import React from 'react';
 import Header from './Header';
 import ContestPreview from './ContestPreview';
-
-
-
 class App extends React.Component{
-	/*constructir(props){
-		super(props);
-		this.state={test :42};
-	}*/
+
 	state ={
 		pageHeader : 'Naming Contests'
 	};

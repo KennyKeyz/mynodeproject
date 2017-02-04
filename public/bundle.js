@@ -61,7 +61,7 @@
 	
 	var _App2 = _interopRequireDefault(_App);
 	
-	var _testData = __webpack_require__(/*! ./testData */ 180);
+	var _testData = __webpack_require__(/*! ./testData */ 181);
 	
 	var _testData2 = _interopRequireDefault(_testData);
 	
@@ -22099,7 +22099,7 @@
 	
 	var _Header2 = _interopRequireDefault(_Header);
 	
-	var _ContestPreview = __webpack_require__(/*! ./ContestPreview */ 181);
+	var _ContestPreview = __webpack_require__(/*! ./ContestPreview */ 180);
 	
 	var _ContestPreview2 = _interopRequireDefault(_ContestPreview);
 	
@@ -22129,11 +22129,6 @@
 	      pageHeader: 'Naming Contests'
 	    }, _temp), _possibleConstructorReturn(_this, _ret);
 	  }
-	  /*constructir(props){
-	  	super(props);
-	  	this.state={test :42};
-	  }*/
-	
 	
 	  _createClass(App, [{
 	    key: 'componentDidMount',
@@ -22207,6 +22202,46 @@
 
 /***/ },
 /* 180 */
+/*!******************************************!*\
+  !*** ./src/components/ContestPreview.js ***!
+  \******************************************/
+/***/ function(module, exports, __webpack_require__) {
+
+	"use strict";
+	
+	Object.defineProperty(exports, "__esModule", {
+	  value: true
+	});
+	
+	var _react = __webpack_require__(/*! react */ 1);
+	
+	var _react2 = _interopRequireDefault(_react);
+	
+	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+	
+	var ContestPreview = function ContestPreview(_ref) {
+	  var contest = _ref.contest;
+	
+	  _react2.default.createElement(
+	    "div",
+	    { className: "ContestPreview" },
+	    _react2.default.createElement(
+	      "div",
+	      null,
+	      contest.categoryName
+	    ),
+	    _react2.default.createElement(
+	      "div",
+	      null,
+	      contest.contestName
+	    )
+	  );
+	};
+	
+	exports.default = ContestPreview;
+
+/***/ },
+/* 181 */
 /*!***************************!*\
   !*** ./src/testData.json ***!
   \***************************/
@@ -22236,15 +22271,6 @@
 			}
 		]
 	};
-
-/***/ },
-/* 181 */
-/*!******************************************!*\
-  !*** ./src/components/ContestPreview.js ***!
-  \******************************************/
-/***/ function(module, exports) {
-
-	"use strict";
 
 /***/ }
 /******/ ]);
